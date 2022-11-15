@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Righteous&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    background: rgba(24,24,27,255);;
+}
+
+.twitch-emb {
+    border: 2px solid rgb(60, 123, 206);
+    border-radius: 30px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgb(60, 123, 206);
+}
+
+.wrapper{
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(60, 123, 206);
+    border: 2px solid rgb(60, 123, 206);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
